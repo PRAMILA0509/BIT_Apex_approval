@@ -34,10 +34,12 @@
           <td>
             <form method="post" action="forwardRequest">
               <input type="hidden" name="requestId" value="REQ20240410-FAC123">
-              <button type="submit" name="action" value="forward">Forward</button>
-              <button type="submit" name="action" value="reject">Reject</button>
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <button type="submit" class="btn-approve" name="action" value="forward">Forward</button>
+                <button type="submit" class="btn-reject" name="action" value="reject">Reject</button>
+              </div>
             </form>
-          </td>
+          </td>          
         </tr>
         <!-- Additional rows can be added dynamically from backend -->
       </tbody>
