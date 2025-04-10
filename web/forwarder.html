@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forwarder Dashboard - BIT Apex</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Forwarder Dashboard</h1>
+
+    <h2>Pending Requests</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>Date</th>
+          <th>Faculty</th>
+          <th>Amount</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="requestsTable">
+        <!-- Requests will be inserted here dynamically -->
+        <tr>
+          <td>REQ20240410-FAC123</td>
+          <td>2025-04-10</td>
+          <td>faculty@bitsathy.ac.in</td>
+          <td>₹5000</td>
+          <td>Workshop materials</td>
+          <td>Lab</td>
+          <td>
+            <form method="post" action="forwardRequest">
+              <input type="hidden" name="requestId" value="REQ20240410-FAC123">
+              <button type="submit" name="action" value="forward">Forward</button>
+              <button type="submit" name="action" value="reject">Reject</button>
+            </form>
+          </td>
+        </tr>
+        <!-- Additional rows can be added dynamically from backend -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
