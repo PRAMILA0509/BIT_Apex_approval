@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - BIT Apex</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Admin Dashboard</h1>
+
+    <h2>Requests for Final Approval</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>Date</th>
+          <th>Faculty</th>
+          <th>Amount</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="requestsTable">
+        <!-- Requests will be loaded from the backend servlet via DB -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
