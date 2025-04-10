@@ -84,6 +84,37 @@
   button:hover {
     background-color: #0056b3;
   }
+
+  .btn-approve {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-reject {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-approve:hover {
+    background-color: #218838;
+  }
+  
+  .btn-reject:hover {
+    background-color: #c82333;
+  }
+  
   
   /* Checkbox Group */
   .checkbox-group label {
@@ -119,7 +150,7 @@
   }
   
   /* Responsive */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-inline-size: 768px) {
     .dashboard-container,
     .login-container {
       margin: 20px;
@@ -134,4 +165,6 @@
       font-size: 15px;
     }
   }
+
+  
   
